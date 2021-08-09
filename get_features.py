@@ -118,9 +118,9 @@ def fetch_details_from_info_page(title):
     
 
 def main():
-    filepath = "dataset/balanced_dataset2.csv"
+    filepath = "dataset/master.csv"
     #Fetch edit count and write to CSV
-    df = pd.read_csv(filepath, skiprows=range(1, 643))
+    df = pd.read_csv(filepath)
 
     # df = pd.read_csv(filepath)
     titles = df['page_title']
